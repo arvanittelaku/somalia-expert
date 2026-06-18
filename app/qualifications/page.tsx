@@ -40,6 +40,16 @@ export default function QualificationsPage() {
         </ul>
 
         <h2 className="mt-10 text-xl font-bold text-[#0B2D4E]">
+          UK Tribunals and Legal Aid (Scotland)
+        </h2>
+        <p className="mt-4 text-[#374151] leading-relaxed">
+          Somalia expert evidence is used in UK Immigration and Asylum Chamber proceedings across England, Wales,
+          Scotland, and Northern Ireland. Scottish solicitors commonly instruct experts for hearings listed in Glasgow
+          and Edinburgh under Scottish Legal Aid Board (SLAB) civil legal aid. Prior SLAB approval of expert fees is
+          required before chargeable work begins.
+        </p>
+
+        <h2 className="mt-10 text-xl font-bold text-[#0B2D4E]">
           Immigration Tribunal Practice Direction: Expert Duties
         </h2>
         <p className="mt-4 text-[#374151] leading-relaxed">

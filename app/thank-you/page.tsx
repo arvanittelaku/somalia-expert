@@ -52,7 +52,7 @@ export default function ThankYouPage() {
           <ul className="mt-4 space-y-3 text-left text-sm leading-relaxed">
             <li>We review your case details and match you with a qualified Somalia expert witness.</li>
             <li>You receive a response within one business day with proposed scope and timeline.</li>
-            <li>Legal Aid cases: confirm LAA prior authority before the expert begins work.</li>
+            <li>Legal Aid cases: confirm SLAB prior approval (Scotland) or LAA prior authority (England &amp; Wales) before the expert begins work.</li>
           </ul>
           <Link
             href="/how-to-instruct"

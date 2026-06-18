@@ -1,6 +1,7 @@
 import { PageShell } from "@/components/layout/PageShell";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { createMetadata } from "@/lib/metadata";
+import { SITE_SCOPE } from "@/lib/constants";
 
 export const metadata = createMetadata({
   title: "Instruct a Somalia Expert Witness | SomaliaExpert UK",
@@ -14,9 +15,10 @@ export default function ContactPage() {
   return (
     <PageShell
       title="Instruct a Somalia Expert Witness"
-      subtitle="Confidential case submission. Response within one business day."
+      subtitle="Confidential case submission for UK solicitors only. Response within one business day."
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
     >
+      <p className="mb-8 max-w-3xl text-sm text-[#374151] leading-relaxed">{SITE_SCOPE}</p>
       <div className="grid min-w-0 gap-10 lg:grid-cols-3 lg:gap-12">
         <div className="min-w-0 lg:col-span-2">
           <ContactForm />
@@ -26,7 +28,7 @@ export default function ContactPage() {
           <ul className="mt-4 space-y-4 text-sm text-[#374151]">
             <li>All major Somali asylum profiles covered</li>
             <li>MOJ framework and regional analysis specialists</li>
-            <li>Legal Aid rates available</li>
+            <li>SLAB prior approval (Scotland) and LAA prior authority (England &amp; Wales)</li>
             <li>Immigration Tribunal Practice Direction compliant</li>
             <li>Response within 1 business day</li>
           </ul>

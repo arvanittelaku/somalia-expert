@@ -1,6 +1,6 @@
 import { PageShell } from "@/components/layout/PageShell";
 import { createMetadata } from "@/lib/metadata";
-import { SITE_EMAIL } from "@/lib/constants";
+import { SITE_EMAIL, SITE_SCOPE } from "@/lib/constants";
 
 export const metadata = createMetadata({
   title: "Privacy Policy | SomaliaExpert",
@@ -18,6 +18,7 @@ export default function PrivacyPage() {
         personal data submitted through our contact form (name, law firm, email, phone, and case details) solely to
         respond to instruction requests and match appropriate experts.
       </p>
+      <p className="mt-4 text-sm text-[#374151] leading-relaxed">{SITE_SCOPE}</p>
       <p className="mt-4 text-[#374151] leading-relaxed">
         Contact form submissions are stored securely and retained only as long as necessary to fulfil your request.
         We do not sell personal data. You may request deletion by emailing {SITE_EMAIL}. Non-essential tracking

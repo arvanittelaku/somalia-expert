@@ -178,7 +178,13 @@ export const guides: Guide[] = [
       {
         heading: "Legal Aid and Tribunal Requirements",
         paragraphs: [
-          "Legal Aid cases require LAA prior authority before expert work begins. Reports must comply with CPR Part 35 and Immigration Tribunal Practice Direction paragraph 10. Allow 14 days for standard reports and 7 days for urgent instructions. Confirm hearing dates and whether oral evidence is required.",
+          "Legal Aid cases require prior approval before expert work begins. In Scotland, the Scottish Legal Aid Board (SLAB) administers civil legal aid for asylum tribunal work; Scottish solicitors must obtain SLAB prior approval of reasonable expert fees, including the expert's CV, scope, and fee estimate. In England and Wales, the Legal Aid Agency (LAA) prior authority process applies. Reports must comply with CPR Part 35 and Immigration Tribunal Practice Direction paragraph 10. Allow 14 days for standard reports and 7 days for urgent instructions. Confirm hearing dates (including Glasgow and other UK hearing centres) and whether oral evidence is required.",
+        ],
+      },
+      {
+        heading: "Scottish Legal Aid (SLAB): What Solicitors Should Provide",
+        paragraphs: [
+          "Scottish solicitors instructing Somalia country experts should confirm SLAB funding before work starts. Typical prior approval submissions include: the expert's qualifications and CV; a clear scope of work linked to the appellant's profile (clan minority, Al-Shabaab, FGM, MOJ return, etc.); estimated hours and fee; tribunal hearing date and venue; and why independent country expert evidence is necessary beyond Home Office CPIN material. SLAB assessment is separate from LAA rules in England and Wales.",
         ],
       },
     ],

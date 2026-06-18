@@ -10,6 +10,7 @@ import { currentCpins, countryGuidanceCases } from "@/data/cpin-data";
 import { guides } from "@/data/guides";
 import { asylumProfiles } from "@/data/asylum-profiles";
 import { HubLinkGrid } from "@/components/ui/HubLinkGrid";
+import { LEGAL_AID_SCOTLAND_SUMMARY, LEGAL_AID_ENGLAND_WALES_SUMMARY } from "@/lib/constants";
 import { JsonLd } from "@/components/ui/JsonLd";
 
 const cpinFaqs = [
@@ -127,6 +128,22 @@ export default function CpinCountryGuidancePage() {
           research and source citations beyond the CPIN. Where the CPIN supports the appellant, the expert confirms and
           applies it to the individual profile. Where it does not, the expert challenges CPIN findings with verifiable
           evidence.
+        </p>
+
+        <h2 className="mt-10 text-xl font-bold text-[#0B2D4E]">Legal Aid and Expert Reports</h2>
+        <p className="mt-4 text-[#374151] leading-relaxed">
+          Most Somalia expert reports in UK asylum proceedings are Legal Aid funded. Scottish solicitors obtain prior
+          approval from the Scottish Legal Aid Board (SLAB) before instructing country experts for tribunal hearings,
+          including those listed in Glasgow and Edinburgh.
+        </p>
+        <p className="mt-4 text-[#374151] leading-relaxed">{LEGAL_AID_SCOTLAND_SUMMARY}</p>
+        <p className="mt-4 text-[#374151] leading-relaxed">{LEGAL_AID_ENGLAND_WALES_SUMMARY}</p>
+        <p className="mt-4 text-[#374151] leading-relaxed">
+          See our{" "}
+          <Link href="/how-to-instruct" className="font-semibold text-[#C8922A] hover:underline">
+            how to instruct guide
+          </Link>{" "}
+          for SLAB and LAA prior approval steps.
         </p>
 
         <div className="mt-10 space-y-6">

@@ -7,6 +7,11 @@ import { asylumProfiles } from "@/data/asylum-profiles";
 import { services } from "@/data/services";
 import { caseTypes } from "@/data/case-types";
 import { regions } from "@/data/regions";
+import {
+  LEGAL_AID_ENGLAND_WALES_SUMMARY,
+  LEGAL_AID_SCOTLAND_SUMMARY,
+  SITE_SCOPE,
+} from "@/lib/constants";
 
 const featuredProfileSlugs = [
   "clan-minority-groups",
@@ -33,8 +38,8 @@ export default function HomePage() {
           </h1>
           <p className="mt-6 max-w-2xl text-base text-white/80 sm:text-lg">
             SomaliaExpert connects UK immigration solicitors, law firms, and Legal Aid practitioners with qualified
-            Somalia country expert witnesses for asylum appeals, clan analysis, Al-Shabaab risk, MOJ country guidance,
-            FGM, Mogadishu return, and Somaliland analysis.
+            Somalia country expert witnesses for First-tier Tribunal and Upper Tribunal asylum appeals in England,
+            Wales, Scotland, and Northern Ireland.
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
             <Link
@@ -60,8 +65,11 @@ export default function HomePage() {
             Somalia is one of the most complex and legally dense asylum jurisdictions in the UK system, with multiple
             layers of country guidance, a rapidly evolving security situation, and high volumes of appeals. Home Office
             refusals often rely on generic CPIN positions that do not reflect the appellant&apos;s specific clan profile,
-            region of origin, or personal risk factors. Independent expert evidence is essential.
+            region of origin, or personal risk factors. Independent expert evidence is essential for UK tribunals,
+            including hearings listed in Glasgow, Edinburgh, Birmingham, London, and other Immigration and Asylum
+            Chamber venues.
           </p>
+          <p className="mt-4 max-w-3xl text-sm text-[#374151] leading-relaxed">{SITE_SCOPE}</p>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
               {
@@ -73,8 +81,8 @@ export default function HomePage() {
                 desc: "Experts cite July 2025 Mogadishu CPINs, EUAA October 2025 country guidance, MOJ [2014], OA [2022], and 2025-2026 Al-Shabaab developments.",
               },
               {
-                title: "Legal Aid Compatible",
-                desc: "LAA prior authority rates available for all major Somali asylum profiles in FTT and Upper Tribunal proceedings.",
+                title: "Legal Aid: Scotland (SLAB) & England/Wales (LAA)",
+                desc: "Compatible with SLAB prior approval for Scottish solicitors and LAA prior authority for England and Wales. See our instruction guide for funding routes.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-[8px] border border-[#C8D8E4] bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.08)]">
@@ -83,6 +91,39 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="py-12 sm:py-16">
+        <div className="mx-auto min-w-0 max-w-6xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-xl font-bold text-[#0B2D4E] sm:text-2xl">
+            Legal Aid in Scotland and the United Kingdom
+          </h2>
+          <p className="mt-4 max-w-3xl text-[#374151] leading-relaxed">
+            Somali asylum appeals are frequently litigated by Scottish solicitors, particularly in Glasgow and Edinburgh
+            where there is a substantial Somali diaspora. Country expert reports in those cases are commonly funded
+            through Scottish Legal Aid Board (SLAB) civil legal aid, not the Legal Aid Agency (LAA) used in England and
+            Wales. SomaliaExpert is set up for both funding routes across the UK.
+          </p>
+          <h3 className="mt-8 text-lg font-semibold text-[#0B2D4E]">Scottish Legal Aid Board (SLAB)</h3>
+          <p className="mt-3 max-w-3xl text-[#374151] leading-relaxed">{LEGAL_AID_SCOTLAND_SUMMARY}</p>
+          <p className="mt-4 max-w-3xl text-[#374151] leading-relaxed">
+            When instructing for a Scottish FTT or Upper Tribunal hearing, provide SLAB with the expert&apos;s CV,
+            proposed scope of work, estimated hours, and fee quote before the expert begins chargeable work. Include the
+            hearing date, appellant profile (clan minority, Al-Shabaab, FGM, MOJ return, etc.), and why country expert
+            evidence is necessary to the appeal. Our{" "}
+            <Link href="/how-to-instruct" className="font-semibold text-[#C8922A] hover:underline">
+              how to instruct guide
+            </Link>{" "}
+            sets out the documents SLAB and Scottish solicitors typically require.
+          </p>
+          <h3 className="mt-8 text-lg font-semibold text-[#0B2D4E]">England and Wales (LAA)</h3>
+          <p className="mt-3 max-w-3xl text-[#374151] leading-relaxed">{LEGAL_AID_ENGLAND_WALES_SUMMARY}</p>
+          <p className="mt-4 max-w-3xl text-sm text-[#374151] leading-relaxed">
+            Northern Ireland legal aid is administered separately by the Legal Services Agency Northern Ireland (LSANI).
+            Solicitors in Belfast and other NI venues should confirm prior approval under the applicable NI legal aid
+            scheme before instruction.
+          </p>
         </div>
       </section>
 

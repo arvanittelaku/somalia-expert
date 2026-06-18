@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s | SomaliaExpert",
   },
   description:
-    "Find a qualified Somalia expert witness in the UK. Country condition reports for asylum appeals: clan analysis, Al-Shabaab, MOJ country guidance, FGM, Mogadishu return, and Somaliland. Legal Aid compatible.",
+    "Find a qualified Somalia expert witness in the UK. Country condition reports for asylum appeals in England, Wales, Scotland, and Northern Ireland. SLAB and LAA Legal Aid compatible.",
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION,
     other: process.env.BING_SITE_VERIFICATION
